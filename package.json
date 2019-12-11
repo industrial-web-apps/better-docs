@@ -1,16 +1,43 @@
 {
-  "name": "better-docs",
-  "version": "1.4.7",
-  "description": "JSdoc theme",
-  "main": "publish.js",
-  "scripts": {
-    "gulp": "./node_modules/.bin/gulp",
-    "test": "mocha --recursive './*spec.js' './typescript/*spec.js'",
-    "build": "babel src --out-dir lib",
-    "docs": "jsdoc -c jsdoc.json"
+  "_from": "better-docs",
+  "_id": "better-docs@1.4.7",
+  "_inBundle": false,
+  "_integrity": "sha512-LQjdTcZT+G4IG6LihCtQqnGChghBRVy63f91YDFK8+ggPlVPt10mXEZTHwE56PMlisKlVb/1Ky6V+dZOoJ+qVw==",
+  "_location": "/better-docs",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "better-docs",
+    "name": "better-docs",
+    "escapedName": "better-docs",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
   },
-  "author": "Wojciech Krysiak",
-  "license": "MIT",
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/better-docs/-/better-docs-1.4.7.tgz",
+  "_shasum": "a9033730672925073db74ce201410fd23f2b7888",
+  "_spec": "better-docs",
+  "_where": "/Users/dylanlyon/shore",
+  "author": {
+    "name": "Wojciech Krysiak"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "brace": "^0.11.1",
+    "react-ace": "^6.5.0",
+    "react-docgen": "^4.1.1",
+    "react-frame-component": "^4.1.1",
+    "underscore": "^1.9.1",
+    "vue-docgen-api": "^3.22.0",
+    "vue2-ace-editor": "^0.0.13"
+  },
+  "deprecated": false,
+  "description": "JSdoc theme",
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.4.4",
@@ -38,18 +65,19 @@
     "jsdoc": "^3.6.3",
     "mocha": "^6.2.0"
   },
+  "license": "MIT",
+  "main": "publish.js",
+  "name": "better-docs",
   "peerDependencies": {
     "react": "^0.16.0",
     "react-dom": "^0.16.0",
     "typescript": "^3.6.4"
   },
-  "dependencies": {
-    "brace": "^0.11.1",
-    "react-ace": "^6.5.0",
-    "react-docgen": "^4.1.1",
-    "react-frame-component": "^4.1.1",
-    "underscore": "^1.9.1",
-    "vue-docgen-api": "^3.22.0",
-    "vue2-ace-editor": "^0.0.13"
-  }
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "docs": "jsdoc -c jsdoc.json",
+    "gulp": "gulp",
+    "test": "mocha --recursive './*spec.js' './typescript/*spec.js'"
+  },
+  "version": "1.4.7"
 }

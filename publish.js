@@ -359,7 +359,7 @@ function buildGroupNav (members, title) {
     var seen = {};
     nav += '<div class="category">';
     if (title) {
-        nav += '<h2>' + title + '</h2>';
+        nav += `<h2 style="cursor: pointer; margin-top: 10px;" onclick="toggle_visibility('${title}');">` + title + '</h2>';
     }
     nav += buildMemberNav(members.tutorials || [], 'Tutorials', seenTutorials, linktoTutorial);
     nav += buildMemberNav(members.modules || [], 'Modules', {}, linkto);
@@ -386,7 +386,7 @@ function buildGroupNav (members, title) {
             nav += '<h3>' + linkto('global', 'Global') + '</h3>';
         }
         else {
-            nav += '<h3>Global</h3><ul>' + globalNav + '</ul>';
+            nav += `<ul id="${title}" style="display:none">${globalNav}</ul>`;
         }
     }
     nav += '</div>';

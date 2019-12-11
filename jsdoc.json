@@ -10,7 +10,8 @@
         "plugins/markdown",
         "category",
         "component",
-        "typescript"
+        "typescript",
+        "babel-root-slash-import"
     ],
     "opts": {
         "encoding": "utf8",

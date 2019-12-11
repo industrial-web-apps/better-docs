@@ -1,4 +1,5 @@
 var reactDocs = require('react-docgen')
+var allComponents = require('react-docgen/dist/resolver/findAllExportedComponentDefinitions')
 var vueDocs = require('vue-docgen-api')
 var fs = require('fs')
 var path = require('path')
@@ -55,7 +56,9 @@ var parseReact = function (filePath, doclet) {
   var src = fs.readFileSync(filePath, 'UTF-8')
   var docGen
   try {
-    docGen = reactDocs.parse(src)
+    // console.log('allComponents', allComponents.default);
+    // docGen = reactDocs.parse(src)
+    docGen = reactDocs.parse(src, allComponents.default)
   } catch (error) {
     if (error.message === 'No suitable component definition found.') {
       return {

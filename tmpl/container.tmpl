@@ -61,7 +61,7 @@
     <?js } else if (doc.kind === 'class' || (doc.kind === 'namespace' && doc.signature)) { ?>
         <?js if (doc.kind === 'class' && !doc.hideconstructor) { ?>
             <div class='vertical-section'>
-                <h3 class="title"><span>Constructor</span></h3>
+                <h3 class="title" style="margin-top: 50px;"><span>Constructor</span></h3>
                 <div class="members">
                     <div class="member"><?js= self.partial('method.tmpl', doc) ?></div>
                 </div>
@@ -85,7 +85,7 @@
     <?js if (doc.component) { ?>
         <?js if (doc.component.slots && doc.component.slots.length) { ?>  
             <div class='vertical-section'>
-                <h3 class="title"><span>Slots</span></h3>
+                <h3 class="title" style="margin-top: 50px;"><span>Slots</span></h3>
                 <div class="members">
                 <?js doc.component.slots.forEach(function(slot) { ?>
                     <div class="member">
@@ -175,7 +175,7 @@
         if (members && members.length && members.forEach) {
     ?>
         <div class='vertical-section'>
-            <h3 class="title"><span>Members</span></h3>
+            <h3 class="title" style="margin-top: 50px;"><span>Members</span></h3>
             <div class="members">
             <?js members.forEach(function(p) { ?>
                 <div class="member"><?js= self.partial('members.tmpl', p) ?></div>
@@ -189,7 +189,7 @@
         if (methods && methods.length && methods.forEach) {
     ?>
         <div class='vertical-section'>
-            <h3 class="title"><span>Methods</span></h3>
+            <h3 class="title" style="margin-top: 50px;"><span>Methods</span></h3>
             <div class="members">
             <?js methods.forEach(function(m) { ?>
                 <div class="member"><?js= self.partial('method.tmpl', m) ?></div>
@@ -203,7 +203,7 @@
         if (typedefs && typedefs.length && typedefs.forEach) {
     ?>
         <div class='vertical-section'>
-            <h3 class="title"><span>Type Definitions</span></h3>
+            <h3 class="title" style="margin-top: 50px;"><span>Type Definitions</span></h3>
             <div class="members">
             <?js typedefs.forEach(function(e) {
                 if (e.signature) {
@@ -226,7 +226,7 @@
         if (events && events.length && events.forEach) {
     ?>
         <div class='vertical-section'>
-            <h3 class="title"><span>Events</span></h3>
+            <h3 class="title" style="margin-top: 50px;"><span>Events</span></h3>
             <div class="members">
             <?js events.forEach(function(e) { ?>
                 <div class="member">
